@@ -6,7 +6,7 @@ const waitCameraData = (videoElement) => new Promise((res, rej) => {
 			res()
 		}
 		count++
-		if(count === 20){
+		if(count === 100){
 			clearInterval(interval)
 			rej("Wrong Camera")
 		}
